@@ -31,8 +31,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1> AutoComplete Search </h1>
-     <div>
+       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2880px-Google_2015_logo.svg.png"  className="google" >
+       </img>
+     <div className="container">
+     <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-search-512.png"  className="icon" >
+          </img>
       <input
         value={input}
         type="text"
@@ -42,6 +45,11 @@ function App() {
         onBlur={()=>setShowResults(false)}
         onChange={(e) => setInput(e.target.value)}
       ></input>
+        <img src="https://cdn2.iconfinder.com/data/icons/movie-59/60/mike__speaker__voice__recorder__movie-512.png"  className="righticonspeaker
+" ></img>
+      <img src="https://cdn1.iconfinder.com/data/icons/andriod-app/32/camera-512.png"  className="righticoncamera
+" >
+      </img>
       {showResults && (
  <div className="products-container">
       {product.map((p) => 
